@@ -1,0 +1,18 @@
+@use "../../assets/sass/variables" as *;
+
+.gallerySection {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  overflow-x: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .gallerySection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 20px;
+
+  }
+}
