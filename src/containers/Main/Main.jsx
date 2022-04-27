@@ -1,18 +1,25 @@
-import beers from "../../data/beers"
-import React from 'react'
+
 import Beerlist from "../../components/Beerlist/Beerlist";
 import "./Main.scss"
 
-const Main = () => {
 
-  const beersJSX = beers.map(beer => {
-    return <Beerlist image = {beer.image_url} name = {beer.name} description = {beer.description} />
+const Main = ({beerProducts}) => {
+
+
+  const beersJSX = beerProducts.map(beer => {
+    return <Beerlist image = {beer.image_url} name = {beer.name} description = {beer.description} alcoholContent = {beer.abv}/>
+
+  
+
   })
+
+
+
 
   return (
     <div>
-      <h1 className = "mainTitle">List of Beers</h1>
-      <div className = "gallerySection">{beersJSX}</div>
+      <h1 className = "mainTitle">Checkout the wide range of brews below!</h1>
+      <div className = "gallerySection">{beersJSX} </div>
     </div>
   )
 }
