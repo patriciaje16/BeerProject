@@ -9,9 +9,9 @@ const BeerCard = ({image, name, alcoholContent, tagline, tips, foodPair, volume,
       <img src={blackCross} alt="Close menu" className="card-display-cross" onClick={toggleAbout}/>
       <img className = "beer-images" src={image} alt={name} />
       <h2 className='beer-name'>{name}</h2>
-      <p className='beer-ABV'>ABV: {alcoholContent}%</p>
-      <p className='beer-volume'> {volume } {unit}</p>
       
+      <p className='beer-volume'> {volume } {unit}</p>
+      <p className='beer-ABV'>ABV: {alcoholContent}%</p>
       <p className='beer-tagline'>{tagline}</p>
       <p className='beer-foodpair'>Food Pairings: {foodPair +""} . </p>
       <p className='beer-tips'>Tips: {tips}</p>

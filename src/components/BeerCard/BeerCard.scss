@@ -15,6 +15,7 @@
   left: 25%;
   width: 300px;
   height: 600px;
+  border-radius: 20px;
   
   
   
@@ -26,6 +27,7 @@
    text-align: center;
    display: grid;
    grid-gap: 5px;
+   
     
     
     .card-display-cross {
@@ -40,12 +42,12 @@
       height: auto;
       width: 60px;
       margin-left: 120px;
-      margin-top: 20px;
+      margin-top: 270px;
       
     }
 
     .beer-name {
-      margin-top: 250px;
+      margin-top: auto;
       font-size: 20px;
     }
 
@@ -53,11 +55,25 @@
       font-style: italic;
     
 
-      margin-top: 20px;
+      margin-top: auto;
 
     }
     .beer-tagline {
       font-weight: bold;
+      margin: auto;
+      
+    }
+
+    .beer-foodpair {
+      font-size: 14px;
+      margin: auto;
+    }
+
+    .beer-tips {
+      font-size: 11px;
+      width: 90%;
+      margin-left: 15px;
+
     }
 
     
