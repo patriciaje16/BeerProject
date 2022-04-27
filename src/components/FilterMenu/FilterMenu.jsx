@@ -13,7 +13,7 @@ const FilterMenu = ({ handleFilterByAlcohol, filterByAlcoholContent, handleFilte
           checked={filterByAlcoholContent}
           onChange={handleFilterByAlcohol}
         />
-        <label htmlFor="PH filter">PH of 4.0 and above</label>
+        <label htmlFor="PH filter">PH of 4.0 and below</label>
         <input type="checkbox" className='ph_filter'
           checked={filterByAlcoholPH}
           onChange={handleFilterByPH}

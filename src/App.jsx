@@ -58,7 +58,7 @@ const App = () => {
 
     if (state) {
       const filterByClassic = beerProducts.filter(beer => {
-        return beer.description.toUpperCase().includes("CLASSIC")
+        return beer.first_brewed.includes("/2010", "/2009", "/2008", "/2007", "/2006", "/2005")
       })
 
       setFilterByClassicAlcohol(state)
@@ -92,7 +92,7 @@ const App = () => {
 
 
   useEffect(() => {
-    fetch("https://api.punkapi.com/v2/beers")
+    fetch("https://api.punkapi.com/v2/beers?per_page=50")
       .then(response => response.json())
       .then(userObjects => {
 

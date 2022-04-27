@@ -1,0 +1,69 @@
+@use "../../assets/sass/_variables.scss"as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.beer-card {
+   background-color: $color-primary;
+  position: fixed;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1;
+  top: 1%;
+  bottom: 0;
+  left: 25%;
+  width: 300px;
+  height: 600px;
+  
+  
+  
+  
+
+  .card-container {
+   margin-top: 10px;
+   position: relative;
+   text-align: center;
+   display: grid;
+   grid-gap: 5px;
+    
+    
+    .card-display-cross {
+      position: relative;
+      margin-left: 5px;
+      
+    }
+  
+
+    .beer-images {
+      position: fixed;
+      height: auto;
+      width: 60px;
+      margin-left: 120px;
+      margin-top: 20px;
+      
+    }
+
+    .beer-name {
+      margin-top: 250px;
+      font-size: 20px;
+    }
+
+    .beer-ABV {
+      font-style: italic;
+    
+
+      margin-top: 20px;
+
+    }
+    .beer-tagline {
+      font-weight: bold;
+    }
+
+    
+
+   
+
+
+  }
+}
