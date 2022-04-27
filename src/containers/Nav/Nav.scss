@@ -5,8 +5,44 @@
 .nav {
   display: flex;
   justify-content: center;
-  column-gap: 50px;
+  column-gap: 30px;
   background-color: $color-primary;
-
+  margin: auto;
+  .nav_icon {
+    height: 40px;
+    width: 30px;
+    margin: auto;
+    
+  }
+  .navHeading {
+    margin: auto;
+  }
   
+}
+
+@media screen and (max-width: 1000px) {
+  .nav {
+
+    .navHeading {
+      margin-left: 50px;
+    }
+    .nav_icon{
+      margin-right: 50px; 
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+  .nav {
+
+    .navHeading {
+      margin-left: 50px;
+    }
+    .nav_icon{
+      margin-right: 50px; 
+    }
+  }
 }

@@ -16,7 +16,7 @@ const Nav = ({searchBox, handleInputForSearchBox, handleFilterByAlcohol, filterB
   
   return (
     <nav className='nav'>
-      <h2 className='navHeading'>Brewdog</h2>
+      <h2 className='navHeading'>BrewDog</h2>
       <SearchBox  label="search" searchBox={searchBox} handleInputForSearchBox={handleInputForSearchBox}/>
       <img src={menu} className="nav_icon" alt="menu icon" onClick={toggleFilter}/>
       {showFilterMenu && <FilterMenu handleFilterByAlcohol={handleFilterByAlcohol} filterByAlcoholContent={filterByAlcoholContent} handleFilterByPH={handleFilterByPH} filterByAlcoholPH={filterByAlcoholPH} handleFilterByClassicAlcohol={handleFilterByClassicAlcohol} filterByClassicAlcohol={filterByClassicAlcohol} toggleFilter={toggleFilter}/>}
