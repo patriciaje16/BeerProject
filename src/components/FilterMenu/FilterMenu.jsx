@@ -8,6 +8,7 @@ const FilterMenu = ({ handleFilterByAlcohol, filterByAlcoholContent, handleFilte
     <div className = "filter-menu">
       <div className = "filter-content">
         <img src={whiteCross} alt="Close menu" className="filter-menu-cross" onClick={toggleFilter}/>
+        <h4 className='filterTitle'>Filters</h4>
         <label htmlFor="ABV filter">ABV 6.0% and above</label>
         <input type="checkbox" className='abv_filter'
           checked={filterByAlcoholContent}

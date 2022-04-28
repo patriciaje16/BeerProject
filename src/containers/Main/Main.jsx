@@ -18,7 +18,7 @@ const Main = ({beerProducts}) => {
 
   return (
     <div>
-      <h1 className = "mainTitle">Checkout the wide range of brews below!</h1>
+      <h1 className = "mainTitle">See a wide range of brews below!</h1>
       <div className = "gallerySection">{beersJSX} </div>
     </div>
   )
