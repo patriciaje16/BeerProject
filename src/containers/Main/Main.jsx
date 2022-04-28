@@ -7,7 +7,7 @@ const Main = ({beerProducts}) => {
 
 
   const beersJSX = beerProducts.map(beer => {
-    return <Beerlist image = {beer.image_url} name = {beer.name} description = {beer.description} alcoholContent = {beer.abv} tagline={beer.tagline} tips={beer.brewers_tips} foodPair={beer.food_pairing} volume={beer.volume.value} unit={beer.volume.unit}/>
+    return <Beerlist image = {beer.image_url} name = {beer.name} description = {beer.description} alcoholContent = {beer.abv} tagline={beer.tagline} tips={beer.brewers_tips} foodPair={beer.food_pairing} />
 
   
 

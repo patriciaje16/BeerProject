@@ -2,7 +2,7 @@ import React from 'react'
 import blackCross from '../../assets/images/black-cross.png'
 import "./BeerCard.scss"
 
-const BeerCard = ({image, name, alcoholContent, tagline, tips, foodPair, volume,unit,toggleAbout}) => {
+const BeerCard = ({image, name, alcoholContent, tagline, tips, foodPair,toggleAbout}) => {
   return (
     <div className='beer-card'>
       <div className='card-container'>
@@ -10,7 +10,7 @@ const BeerCard = ({image, name, alcoholContent, tagline, tips, foodPair, volume,
       <img className = "beer-images" src={image} alt={name} />
       <h2 className='beer-name'>{name}</h2>
       
-      <p className='beer-volume'> {volume } {unit}</p>
+      
       <p className='beer-ABV'>ABV: {alcoholContent}%</p>
       <p className='beer-tagline'>{tagline}</p>
       <p className='beer-foodpair'>Food Pairings: {foodPair +""} . </p>
